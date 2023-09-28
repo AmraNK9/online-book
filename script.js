@@ -17,7 +17,7 @@ const main = document.querySelector('main')
 
 toggleButton.addEventListener('click', function () {
   aside.classList.toggle('show-aside');
-  main.classList.toggle('margin-left')
+  // main.classList.toggle('margin-left')
 });
 
 //toggle btn for btn-group
