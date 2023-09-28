@@ -34,7 +34,7 @@ slider.addEventListener('input', function() {
 
 });
 
-
+console.log(window.outerWidth)
 
 //slider toggle btn
 const font_size_btn = document.querySelector('#Font-Size')
@@ -54,7 +54,7 @@ Line_Height_slider.classList.toggle('hide');
 
 //font size slider
 font_size_slider.children[1].addEventListener('change',()=>{  
-  main.style.fontSize = (parseInt(font_size_slider.children[1].value) +10 )+ 'px'
+  main.style.fontSize = (parseInt(font_size_slider.children[1].value) +25 )+ 'px'
 })
 
 //line height slider 
