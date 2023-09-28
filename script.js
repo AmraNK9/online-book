@@ -55,6 +55,7 @@ Line_Height_slider.classList.toggle('hide');
 //font size slider
 font_size_slider.children[1].addEventListener('change',()=>{  
   main.style.fontSize = (parseInt(font_size_slider.children[1].value) +25 )+ 'px'
+  document.querySelector("h3").style.fontSize = (parseInt(font_size_slider.children[1].value) + 20 )+ 'px'
 })
 
 //line height slider 
