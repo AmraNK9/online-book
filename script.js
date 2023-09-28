@@ -54,7 +54,7 @@ Line_Height_slider.classList.toggle('hide');
 
 //font size slider
 font_size_slider.children[1].addEventListener('change',()=>{  
-  main.style.fontSize = font_size_slider.children[1].value + 'px'
+  main.style.fontSize = (parseInt(font_size_slider.children[1].value) +10 )+ 'px'
 })
 
 //line height slider 
@@ -125,17 +125,17 @@ Comfort.addEventListener('click',()=>{
 })
 
 //scroll down in hide
-const nav = document.querySelector('.toggle-btn')
-let Previous = 0;
-setInterval(()=>{
-if(Previous < window.pageYOffset){
-  toggleButton.classList.add('d-none')
-  nav.classList.add('d-none')
-}
-else{
-  toggleButton.classList.remove('d-none')
-  nav.classList.remove('d-none')
-}
-Previous = window.pageYOffset;
+// const nav = document.querySelector('.toggle-btn')
+// let Previous = 0;
+// setInterval(()=>{
+// if(Previous < window.pageYOffset){
+//   toggleButton.classList.add('d-none')
+//   nav.classList.add('d-none')
+// }
+// else{
+//   toggleButton.classList.remove('d-none')
+//   nav.classList.remove('d-none')
+// }
+// Previous = window.pageYOffset;
 
-},300)
+// },300)
